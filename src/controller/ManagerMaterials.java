@@ -229,5 +229,12 @@ public class ManagerMaterials {
             }
         }
     }
+
+    public static void sortCostMaterials (ArrayList<Material> arr) {
+        for (Material e: arr
+             ) {
+            System.out.println(e);
+        }
+    }
 }
 

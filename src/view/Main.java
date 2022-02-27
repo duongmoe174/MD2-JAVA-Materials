@@ -8,6 +8,8 @@ import model.Meat;
 import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
@@ -52,6 +54,7 @@ public class Main {
             System.out.println("6. Sửa sản phẩm Cripsy Flour");
             System.out.println("7. Tính tiền theo tên sản phẩm nhập vào: ");
             System.out.println("8. Chênh lệch chiết khấu theo sản phẩm: ");
+            System.out.println("9. Sắp xếp sản phẩm theo giá: ");
             System.out.println("0. Exit");
             choice = inputChoice.nextInt();
             switch (choice) {
@@ -78,6 +81,10 @@ public class Main {
                     break;
                 case 8 :
                     ManagerMaterials.differenceDiscount(materials);
+                    break;
+                case 9:
+                    Collections.sort(materials);
+                    ManagerMaterials.sortCostMaterials(materials);
                     break;
                 case 0:
                     System.exit(0);

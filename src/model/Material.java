@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
-public abstract class Material {
+public abstract class Material implements Comparable<Material>{
     private String id;
     private String name;
     private LocalDate manufaturingDate;
@@ -16,6 +16,11 @@ public abstract class Material {
         this.name = name;
         this.manufaturingDate = manufaturingDate;
         this.cost = cost;
+    }
+
+    @Override
+    public int compareTo(Material o) {
+        return this.cost - o.cost;
     }
 
     public String getId() {
