@@ -85,7 +85,7 @@ public class ManagerMaterials {
         return newProduct;
     }
 
-    public static void deleteProduct(ArrayList<Material> arr) {
+    public static void deleteProductByName(ArrayList<Material> arr) {
         Scanner inputNameProcduct = new Scanner(System.in);
         System.out.println("Nhập tên sản phẩm muốn xóa: ");
         String name = inputNameProcduct.nextLine();
@@ -97,7 +97,7 @@ public class ManagerMaterials {
         }
     }
 
-    public static void editMeat(ArrayList<Material> arr) {
+    public static void editMeatByName(ArrayList<Material> arr) {
         Scanner inputNameMeatNeedEdit = new Scanner(System.in);
         System.out.println("Nhập tên sản phẩm Meat bạn muốn sửa: ");
         String inputNameMeat = inputNameMeatNeedEdit.nextLine();
@@ -144,7 +144,7 @@ public class ManagerMaterials {
         }
     }
 
-    public static void editCrispyFlour(ArrayList<Material> arr) {
+    public static void editCrispyFlourByName(ArrayList<Material> arr) {
         Scanner inputNameFlourNeedEdit = new Scanner(System.in);
         System.out.println("Nhập tên sản phẩm Flour bạn muốn sửa: ");
         String inputNameFlour = inputNameFlourNeedEdit.nextLine();

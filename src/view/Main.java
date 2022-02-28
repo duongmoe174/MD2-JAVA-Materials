@@ -68,13 +68,13 @@ public class Main {
                     ManagerMaterials.addProduct(materials, ManagerMaterials.createNewMeat());
                     break;
                 case 4:
-                    ManagerMaterials.deleteProduct(materials);
+                    ManagerMaterials.deleteProductByName(materials);
                     break;
                 case 5:
-                    ManagerMaterials.editMeat(materials);
+                    ManagerMaterials.editMeatByName(materials);
                     break;
                 case 6:
-                    ManagerMaterials.editCrispyFlour(materials);
+                    ManagerMaterials.editCrispyFlourByName(materials);
                     break;
                 case 7:
                     ManagerMaterials.payProduct(materials);
