@@ -17,11 +17,11 @@ public class Main {
     public static void main(String[] args) {
 
         ArrayList<Material> materials = new ArrayList<>();
-        Material botChienXuHongKong = new CrispyFlour("bot01", "botChienXuHongKong", LocalDate.of(2021, 2, 25), 20000, 100);
-        Material botChienXuHanQuoc = new CrispyFlour("bot02", "botChienXuHanQuoc", LocalDate.of(2021, 9, 29), 30000, 150);
-        Material botChienXuVietNam = new CrispyFlour("bot03", "botChienXuVietNam", LocalDate.of(2021, 2, 12), 10000, 140);
-        Material botChienGionNhatBan = new CrispyFlour("bot04", "botChienXuNhatBan", LocalDate.of(2020, 11, 1), 60000, 80);
-        Material botChienGionThaiLan = new CrispyFlour("bot05", "botChienXuThaiLan", LocalDate.of(2021, 4, 3), 40000, 70);
+        Material botMy = new CrispyFlour("bot01", "botMy", LocalDate.of(2021, 2, 25), 20000, 100);
+        Material botChienXu = new CrispyFlour("bot02", "botChienXu", LocalDate.of(2021, 9, 29), 30000, 150);
+        Material botChienGion = new CrispyFlour("bot03", "botChienXuGion", LocalDate.of(2021, 2, 12), 10000, 140);
+        Material botNang = new CrispyFlour("bot04", "botNang", LocalDate.of(2020, 11, 1), 60000, 80);
+        Material botGao = new CrispyFlour("bot05", "botGao", LocalDate.of(2021, 4, 3), 40000, 70);
 
         Material thitBo = new Meat("meat01", "thitBo", LocalDate.of(2021, 12, 21), 25000, 20);
         Material thitLon = new Meat("meat02", "thitLon", LocalDate.of(2022, 2, 23), 15000, 100);
@@ -29,18 +29,18 @@ public class Main {
         Material thitBoA5 = new Meat("meat04", "thitBoA5", LocalDate.of(2022, 10, 19), 205000, 50);
         Material thitChim = new Meat("meat05", "thitChim", LocalDate.of(2021, 12, 21), 35000, 200);
 
-        materials.add(botChienXuHongKong);
-        materials.add(botChienXuHanQuoc);
-        materials.add(botChienXuVietNam);
-        materials.add(botChienGionNhatBan);
-        materials.add(botChienGionThaiLan);
+        materials.add(botMy);
+        materials.add(botChienXu);
+        materials.add(botChienGion);
+        materials.add(botNang);
+        materials.add(botGao);
         materials.add(thitBo);
         materials.add(thitLon);
         materials.add(thitBoWagyu);
         materials.add(thitBoA5);
         materials.add(thitChim);
 
-        System.out.println(((CrispyFlour) botChienXuHongKong).getRealMoney());
+        System.out.println(((CrispyFlour) botMy).getRealMoney());
 
         int choice = -1;
         Scanner inputChoice = new Scanner(System.in);
